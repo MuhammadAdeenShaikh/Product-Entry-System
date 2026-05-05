@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(209, 209, 209);   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-right: 31%;
+}
+
+/* form */
+
+form {
+    background-color: white;
+    color: gray;
+    width: 50%;
+    height: 35vh;
+    border: 1px solid  rgb(209, 209, 209);
+    border-radius: 12px;
+    padding-left: 3%;
+}
+
+.row1, .row2 {
+    display: flex;
+}
+
+#Product, #Category, #Quantity, #Price, #TotalPrice {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px 30px 30px; 
+}
+
+input, select {
+    width: 240px;
+    height: 30px;
+    cursor: pointer;    
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    margin-left: 4.5%;
+}
+
+#btn {
+    background-color: #3B82F6;
+    color: white;
+    width: 540px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 7.3%;
+    cursor: pointer;
+}
+
+/* table */
+
+#table {
+    border: 1px solid gray;
+    text-align: center;
+    width: 60%;
+    background-color: white;
+    border-radius: 4px;
+}
+tr {
+    height: 38px;
+}
+
+.upd {
+    background-color: green;
+    color: white;
+     width: 70px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.del {
+    background-color: red;
+    color: white;
+    width: 70px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+     h1 {
+        font-size: 22px;
+        margin:12% auto 4% 30%;
+    }
+
+/* form */
+
+form {
+    background-color: white;
+    color: gray;
+    width: 70%;
+    height: 70vh;
+    border: 1px solid  rgb(209, 209, 209);
+    border-radius: 12px;
+    padding-left: 3%;
+}
+
+.row1, .row2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#Product, #Category, #Quantity, #Price, #TotalPrice {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px 30px 30px; 
+}
+
+input, select {
+    width: 160px;
+    height: 30px;
+    cursor: pointer;    
+}
+
+.button {
+    margin-left: 12%;
+}
+
+
+#btn {
+    background-color: #3B82F6;
+    color: white;
+    width: 160px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 15%;
+    cursor: pointer;
+}
+
+/* table */
+
+#table {
+    width: 100%;
+    font-size: 12px;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+}
+tr {
+    height: 38px;
+}
+
+.upd {
+    background-color: green;
+    color: white;
+     width: 70px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.del {
+    background-color: red;
+    color: white;
+    width: 70px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+}   

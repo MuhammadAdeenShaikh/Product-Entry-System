@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Entry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <h1>Product Entry</h1>
+    <!-- form -->
+    <form>
+        <div class="row1">
+        <div id="Product">
+        <label>Product Name</label>
+        <input type="text" id="product-name" required>
+        </div>
+        <div id="Category">
+        <label>Category</label>
+     <input list="categories" id="category">
+
+    <datalist id="categories">
+    <option value="Electronics">
+    <option value="Footwears">
+    <option value="Dresses">
+    </datalist>
+        </div>
+        </div>
+
+        <div class="row2">
+            <div id="Quantity">
+                <label>Quantity</label>
+                <input type="number" id="quantity" required>
+            </div>
+            <div id="Price">
+            <label>Price (USD)</label>
+            <input type="number" id="price" required>  
+        </div>
+        </div>
+
+
+        <div class="button"><button type="button" id="btn">Add Product</button></div>
+    </form>
+    <br><br>
+<!-- table -->
+    <table id="table" border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total Price</th>
+        </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+</table>
+    <script src="script.js"></script>
+</body>
+</html>
